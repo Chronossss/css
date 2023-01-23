@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML (title)</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img
+          src="37098d19c0174ae90db07d7fc7afd9b3.jpeg"
+          alt="тут написано html"
+          class="avatar"
+        />
+        <!-- ^изображение по скачанной картинке^, атрибуты: ссылка или файл с картинкой (src), размер (width), описание если картинка не работает (alt) -->
+        <!-- ^тут было изображение по URL коду^ -->
+        <div class="info-text">
+          <h1>Заголовок 1 (h1)</h1>
+          <p>Курсив правильный (em)</p>
+          <strong> Жирный шрифт (strong)</strong>
+          <p><i>Курсив устаревший (i)</i></p>
+
+          <h4>
+            Тут были списки без определенного порядка (ul), но теперь тут ссылки
+          </h4>
+          <!-- Вместо окружностей квадраты перед элементами списка (атрибут type) -->
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
+            target="_blank"
+            >Подробнее о ненумерованных списках</a
+          >
+          |
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+            target="_blank"
+            >Подробнее о нумерованных списках</a
+          >
+          <!-- Ссылки на другие сайты (тег <а> и атрибут href) -->
+          <!-- Ссылка создает новую вкладку, а не заменяет использующуюся (атрибут target="_blank")  -->
+          <!-- Элемент списка (li) -->
+        </div>
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Список с определенным порядком (ol)</h2>
+        <ol type="I" class="list">
+          <li>Вместо арабских римские цифры (атрибут type)</li>
+          <li>Тут была ссылка</li>
+          <li>Ссылки на другие сайты (тег <а> и атрибут href)</li>
+          <li>
+            Ссылка создает новую вкладку, а не заменяет использующуюся (атрибут
+            target="_blank")
+          </li>
+          <li>Элемент списка (li)</li>
+        </ol>
+      </div>
+
+      <div class="card bg-green">
+        <h2>Таблицы (table)</h2>
+        <table class="table">
+          <tr>
+            <td>Теги</td>
+            <td>Атрибуты</td>
+            <td>Теги для структуры</td>
+          </tr>
+          <tr>
+            <td>Строки таблицы (tr)</td>
+            <td>Рамки таблицы (border) (не используется)</td>
+            <td>Шапка таблицы (thead)</td>
+          </tr>
+          <tr class="temp">
+            <td>Cтолбцы таблицы (td)</td>
+            <td>Расстояние между ячейками (cellspacing)</td>
+            <td>Тело таблицы (tbody)</td>
+          </tr>
+          <tr class="temp">
+            <td>Заголовок столбца (th)</td>
+            <td>Ячейка таблицы</td>
+            <td>Конец таблицы(tfoot)</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card bg-red">
+        <h2>Ссылка на другую страницу сайта</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com/">Ссылка на Youtube</a>
+          </li>
+          <li>
+            <a href="https://music.youtube.com/">Ссылка на Youtube Music</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h2>Формы (form)</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name"
+                >Cтрока для ввода (input с атрибутом text):</label
+              >
+              <input type="text" id="name" placeholder="Подсказка для ввода" />
+            </div>
+            <div class="form-group">
+              <label for="email"
+                >Строка для ввода (input с атрибутом email):</label
+              >
+              <input
+                type="email"
+                id="email"
+                placeholder="Подсказка для ввода"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="text">Большое поле для ввода (textarea):</label>
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Текст в рамочке (value)" />
+          <!-- Типы инпутов: текст (text), имейл (email), число(number), пароль (password), цвет (color), календарь (date), ползунок (range), "якорь" (checkbox), кнопки (radio), кнопки отправки (submit) и др.  -->
+        </form>
+        <!-- <div class="box-model">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> -->
+      </div>
+
+      <div class="position">
+        <div class="box"></div>
+      </div>
+      
+    </div>
+    <div style="margin-bottom: 500px"></div>
+  </body>
+</html>
